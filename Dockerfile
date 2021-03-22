@@ -24,7 +24,7 @@ RUN make STAR
 ENV PATH /home/STAR-${STAR_VERSION}/source:${PATH}
 
 RUN wget --no-check-certificate https://github.com/deweylab/RSEM/archive/refs/tags/v${RSEM_VERSION}.tar.gz
-RUN tar -xzf v${RSEM_VERSION}RUN tar -xzf v1.3.1.tar.gz
+RUN tar -xzf v${RSEM_VERSION}.tar.gz
 WORKDIR /home/RSEM-${RSEM_VERSION}
 RUN make
 RUN make ebseq
